@@ -26,7 +26,8 @@ direnv allow
 # ╭──────────────────────╮
 # │ INSTALL DEPENDENCIES │
 # ╰──────────────────────╯
-pip3 install -r requirements.txt --user > /dev/null 2>&1
+pip3 install -r requirements.txt > /dev/null 2>&1
+pip install -e . > /dev/null 2>&1
 
 # ╭────────────────────────────╮
 # │ PROMPT: CHOOSE FILE        │
