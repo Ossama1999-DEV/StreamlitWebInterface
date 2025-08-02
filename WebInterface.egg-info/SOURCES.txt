@@ -1,0 +1,7 @@
+README.md
+setup.py
+WebInterface.egg-info/PKG-INFO
+WebInterface.egg-info/SOURCES.txt
+WebInterface.egg-info/dependency_links.txt
+WebInterface.egg-info/requires.txt
+WebInterface.egg-info/top_level.txt
