@@ -1,6 +1,6 @@
-# 📊 AOCS Equipment Streamlit Web Interface
+# 📊 Streamlit Web Interface
 
-A modern, user-friendly web interface for exploring and filtering AOCS (Attitude and Orbit Control Systems) equipment data from Excel files. Built with **Streamlit** for rapid deployment and ease of use across **Linux** and **Windows** platforms.
+A modern, user-friendly web interface for exploring and filtering equipment data from Excel files. Built with **Streamlit** for rapid deployment and ease of use across **Linux** and **Windows** platforms.
 
 ---
 
@@ -13,7 +13,7 @@ A modern, user-friendly web interface for exploring and filtering AOCS (Attitude
 ├── requirements.txt      # Python dependencies
 ├── runLinux.sh           # Linux launcher script
 ├── runWindows.bat        # Windows launcher script
-├── AOCS_equipment.xlsx   # Default Excel data file
+├── file.xlsx             # Default Excel data file
 ├── .streamlit/
 │   └── config.toml       # Optional Streamlit configuration
 ├── .envrc                # Auto-generated for direnv (if missing)
@@ -24,14 +24,14 @@ A modern, user-friendly web interface for exploring and filtering AOCS (Attitude
 
 ## 🚀 Key Features
 
-- **Excel File Support:** Load and preview `.xlsx` files with ease
-- **Multi-Sheet Detection:** Automatically handles multiple sheets per file
-- **Column Filtering:** Filter data by column values (with `contains`)
-- **Default & Custom Files:** Uses `AOCS_equipment.xlsx` by default, or specify your own
-- **One-Click Launch:** Opens automatically in your browser
-- **Environment Variable:** Set `STREAMLIT_XLS_FILE` to choose a file programmatically
-- **Cross-Platform:** Ready-to-use launchers for Linux and Windows
-- **Clean Logging:** Errors and output are logged for easy troubleshooting
+- **Excel File Support:**       Load and preview `.xlsx` files with ease
+- **Multi-Sheet Detection:**    Automatically handles multiple sheets per file
+- **Column Filtering:**         Filter data by column values (with `contains`)
+- **Default & Custom Files:**   Uses `file.xlsx` by default, or specify your own
+- **One-Click Launch:**         Opens automatically in your browser
+- **Environment Variable:**     Set `STREAMLIT_XLS_FILE` to choose a file programmatically
+- **Cross-Platform:**           Ready-to-use launchers for Linux and Windows
+- **Clean Logging:**            Errors and output are logged for easy troubleshooting
 
 ---
 
@@ -117,8 +117,8 @@ runWindows.bat
 
 ## 🧪 Code Quality
 
-- **Linting:** `pylint app.py`
-- **Formatting:** `black app.py`
+- **Linting:**      `pylint app.py`
+- **Formatting:**   `black app.py`
 
 ---
 
@@ -150,7 +150,8 @@ rm -f streamlit_output.log streamlit_error.log
 
 ## 📃 License
 
-MIT License © DBIBIH Oussama
+MIT License © DBIBIH Oussama (2025)
+[LICENSE](LICENSE)
 
 ---
 
