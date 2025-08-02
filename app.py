@@ -53,7 +53,7 @@ def main():
         layout="wide"
     )
 
-    st.image("logo.png", width=150)
+    st.image("logo.jpg", width=150)
     st.title("DATA Web Interface")
 
     DEFAULT_FILE = "file.xlsx"
