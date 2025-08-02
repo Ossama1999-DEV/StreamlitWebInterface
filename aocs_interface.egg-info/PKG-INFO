@@ -1,0 +1,14 @@
+Metadata-Version: 2.4
+Name: aocs_interface
+Version: 0.1.0
+Summary: AOCS Equipment Web Interface
+Author: Ton Nom
+Requires-Python: >=3.7
+Requires-Dist: streamlit
+Requires-Dist: pandas
+Requires-Dist: click
+Requires-Dist: openpyxl
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
