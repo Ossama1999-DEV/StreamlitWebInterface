@@ -4,3 +4,4 @@ Version: 0.1.0
 Summary: Web Interface
 Author: Ton Nom
 Requires-Python: >=3.7
+License-File: LICENSE
