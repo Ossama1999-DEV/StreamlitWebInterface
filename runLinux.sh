@@ -26,7 +26,7 @@ direnv allow
 # ╭──────────────────────╮
 # │ INSTALL DEPENDENCIES │
 # ╰──────────────────────╯
-pip3 install -r requirements.txt > /dev/null 2>&1
+pip3 install -r config/requirements.txt > /dev/null 2>&1
 pip install -e . > /dev/null 2>&1
 
 # ╭────────────────────────────╮
@@ -43,7 +43,7 @@ ask_yes_no() {
     done
 }
 
-DEFAULT_FILE="file.xlsx"
+DEFAULT_FILE="resources/file.xlsx"
 XLS_FILE=$DEFAULT_FILE
 
 if ask_yes_no "Do you want to change the default Excel file ($DEFAULT_FILE)?"; then
@@ -60,11 +60,16 @@ fi
 # ╰──────────────────────────────╯
 export STREAMLIT_XLS_FILE="$XLS_FILE"
 
+# config
+git log --pretty=format:"- %s" > CHANGELOG.md 2>&1
+python3 changelog.py 2>&1
+echo "✅ DONE!"
+
 # ╭──────────────────────────────╮
 # │ RUN STREAMLIT SILENTLY       │
 # ╰──────────────────────────────╯
 # Redirect errors to a file and display only useful logs
-streamlit run app.py \
+streamlit run src/app.py \
     --browser.gatherUsageStats=false \
     --server.headless false \
     --server.enableCORS false \
