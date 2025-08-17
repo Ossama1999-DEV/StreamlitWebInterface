@@ -1,7 +1,0 @@
-README.md
-setup.py
-aocs_interface.egg-info/PKG-INFO
-aocs_interface.egg-info/SOURCES.txt
-aocs_interface.egg-info/dependency_links.txt
-aocs_interface.egg-info/requires.txt
-aocs_interface.egg-info/top_level.txt
